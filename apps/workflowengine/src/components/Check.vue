@@ -111,9 +111,7 @@ export default {
 		if (this.check.class === null) {
 			this.$nextTick(() => this.$refs.checkSelector.$el.focus())
 		}
-
 		this.check.invalid = !this.validate()
-		this.$emit('update', this.check)
 	},
 	methods: {
 		showDelete() {
